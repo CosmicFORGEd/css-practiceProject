@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+
+        
+
+        body{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .header{
+            background-color: #1f2937;
+            padding: 24px 24px 80px;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            max-width: 1100px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .header_box1, .header_box2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1{
+            font-size: 24px;
+            font-weight: bold;
+            color: #f9faf8;
+            margin: 0;
+        }
+
+        ul{
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            gap: 16px;
+        }
+
+        a{
+            text-decoration: none;
+            color: #e5e7eb;
+        }
+
+        .hero{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            max-width: 370px;
+            padding-bottom: 16px;
+        }
+
+        h2{
+            font-size: 48px;
+            font-weight: 900;
+            margin: 0;
+            color: #f9faf8;
+        }
+
+        p{
+            margin: 0;
+            color: #e5e7eb;
+        }
+
+        button{
+            align-self: start;
+            padding: 8px 24px;
+            border-radius: 10px;
+            border: none;
+            color: white;
+            background-color: #3882F6;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+
+        }
+
+        button:hover{
+            background-color: #2563eb;  
+            transform: translateY(3px);
+        }
+
+        .image-placeholder{
+            width: 450px;
+            height: 220px;
+            background-color: #6B7280;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header_box1">
+                <h1>HEADER LOGO</h1>
+                <ul>
+                    <li><a href="#">header link one</a></li>
+                    <li><a href="#">header link two</a></li>
+                    <li><a href="#">header link three</a></li>
+                </ul>
+            </div>
+
+            <div class="header_box2">
+                <div class="hero">
+                    <h2>This website is awesome</h2>
+                    <p>This website has some subtext that goes here under the main title. 
+                        Its a smaller font and the color is lower contrast.</p>
+                    <button>Sign Up</button>  
+                </div>
+
+                <div class="image-placeholder">
+                    this is a placeholder for an image
+                </div>
+
+            </div>
+        </div>    
+    </div>
+    
+</body>
+</html>

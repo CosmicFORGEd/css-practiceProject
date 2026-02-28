@@ -18,6 +18,7 @@
             flex-direction: column;
             margin: 0;
             font-family: 'Roboto', sans-serif;
+            height: 100vh;
         }
 
         .header{
@@ -31,7 +32,6 @@
             gap: 50px;
             max-width: 1100px;
             margin: 0 auto;
-            width: 100%;
         }
 
         .header_box1, .header_box2{
@@ -107,6 +107,88 @@
             color: white;
         }
 
+        .content{
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        .contentinfo{
+            max-width: 1000px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 0 auto;
+            padding: 24px;
+            box-sizing: border-box;
+        }
+
+        .content_info_box1 h2{
+            font-size: 36px;
+            font-weight: 900;
+            color: #1f2937;
+            text-align: center;
+        }
+
+        .content_info_box2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .pic{
+            width: 100px;
+            height: 110px;
+            border: 3px solid#3882F6;
+            border-radius: 8px;
+        }
+
+        .content_info_box2 p{
+            color: #1f2937;
+            max-width: 100px;
+            text-align: center;
+        }
+
+        .content.quote{
+            background-color: #e5e7eb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        figure{
+            max-width: 1000px;
+            width: 100%;
+            padding: 24px 24px 24px 36px;
+            box-sizing: border-box;
+        }
+
+        .quote p{
+            color: #1f2937;
+            font-size: 36px;
+            font-weight: 400 ; 
+            font-style: italic;
+        }        
+
+        figcaption{
+            text-align:right;
+            font-weight: 700;
+            font-size: 24px;
+        }
+        
+        .footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1f2937;
+            color: #e5e7eb;
+            min-height: 48px;
+        }
+
+
     </style>
 
 </head>
@@ -138,5 +220,53 @@
         </div>    
     </div>
     
+
+    <div class="content">
+        <div class="contentinfo">
+            
+            <div class="content_info_box1">
+                <h2>Some random information</h2>
+            </div>
+            <div class="content_info_box2">
+                <div>
+                    <div class="pic"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+                <div>
+                    <div class="pic"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+                <div>
+                    <div class="pic"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+                <div>
+                    <div class="pic"></div>
+                    <p>this is some subtext under an illustration or image</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content quote">
+            <figure>
+                <blockquote>
+                    <p>This is an inspiring quote, or a testimonial
+                        from a customer. Maybe it's just filling up
+                        space, or maybe people will actually read it.
+                        Who knows? All I know is that it looks cool.</p>
+                </blockquote>
+                <figcaption>-<cite>Thor, God ofThunder</cite></figcaption>
+            </figure>
+            
+        </div>
+
+        <div class="content call_action"></div>
+    </div>
+
+
+    <div class="footer">
+        <footer><p><small>Copyright &copy; The Odin Project 2021</small></p></footer>
+        
+    </div>
 </body>
 </html>
